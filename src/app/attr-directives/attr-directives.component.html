@@ -1,0 +1,12 @@
+<h3>Attribute-directives works!</h3>
+<div *ngFor="let name of names">
+  <p [ngStyle]="{'background-color':name === 'Jennifer' ? 'green' : 'orange' }">{{name}}</p>  
+  </div>
+  <br/>
+  <h2>Ng Class Directive</h2>
+  <h3 [ngClass]="'red'"> Need your attention</h3>
+  <div [ngClass]="['red','size20']"> Red Background, Text with Size 20px  </div>
+  <div [ngClass]="{'red':false,'size20':true}">Text with Size 20px</div>
+  <br/>
+  <h3>Custom Directive</h3>
+  <p appText>This is from a Custom Directive</p>

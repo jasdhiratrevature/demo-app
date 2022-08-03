@@ -1,0 +1,10 @@
+<h2>Structual-directives works!</h2>
+<button (click)="show = !show">{{ show ? "hide" : "show" }}</button>
+show = {{ show }}
+<br />
+<div *ngIf="show">Text to show</div>
+<br />
+<h3>Displaying Names using ngFor</h3>
+<div *ngFor="let name of names">
+    <p>{{name}}</p> 
+</div>
